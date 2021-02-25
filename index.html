@@ -1,16 +1,4 @@
-<?php
-session_start();
-if (isset($_SESSION['error'])) {
-	$err="username password wrong";
-}else{
-	$err="";
-}
-if (isset($_SESSION["msg"])) {
-	$msg=$_SESSION['msg'];
-}else{
-	$msg="";
-}
-?>
+
 <html>
 <head>
 	  <meta charset="utf-8">
@@ -413,6 +401,4 @@ function selectCountry(val){
 </script>
 </body>
 </html>
-<?php
-session_unset();
-?>
+
